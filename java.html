@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="block">
+    <!-- <div id="block"></div>
+    <p id="para"></p> -->
+    <script>
+        //dom funcitons
+        // let a = document.getElementById("block")
+        // console.log(a)
+        // a.innerText+="Hello"
+        // a.innerHTML+="<h1>Hello</h1>"
+        // let b = document.getElementById("para")
+        // console.log(b)
+        // b.innerText+="jdaldjfijrfoiajdfijerfakdljfieoa;jkj"
+
+        let body = document.getElementById("block")
+        console.log(body)
+       let p= document.createElement("p")
+        p.innerText="hiii"
+        body.appendChild(p)
+        // function add(a,b)
+        // {
+        //     console.log(a+b)
+        // }
+      
+        // function sub(x,y)
+        // {
+        //     console.log(x-y)
+        // }
+        // function mlty(a,b)
+        // {
+        //     console.log(a*b)
+        // }
+        // function div(a,b)
+        // {
+        //     console.log(a/b)
+        // }
+        
+        // add(5,6)
+        // sub(45,12)
+        // mlty(10,20)
+        // div(50,5)
+        // var a=12
+        // if(a==10){
+        //     console.log(true)
+        // }
+        // else{
+        //    console.log(false)
+        // }
+        //  for(var i=0;i<=12;i++){
+        //     console.log(i)
+        //  }
+        //    a=[1,2,3,4,5,1,2,3,4]
+        //     for ( var i=0;i<a.length;i++ )
+        //     {
+        //     console.log(a[i])}
+        //     console.log(a.length)
+
+    //        var user=[{
+    //         name:sapna,
+    //         sname:dwivedi, 
+    //         age:21,},{
+    //             name:riya,
+    //             sname:tiwari,
+    //             age:23,
+    //        }];
+    //    for(var i=0;i<user.length;i++)
+    //    {
+    //     console.log(user[i].name)
+    //    }
+    
+    //  huisting var ko automatic top m le leta h uske declaration ko
+        //    var i=3
+        //    var i=90 //var changes the value
+        //    console.log(i)
+        //    const v=4
+        //    console.log(v) //but const doesn't change the value
+        //    let d=4
+        //    d=50 //let also change the value 
+        //    console.log(d)
+    // object 
+//     var a=[3,4,5,6,7]
+//     var users = [{
+//         name:"sapna",
+//         sname:"dwivedi",
+//         age:21,
+//         friends:[{
+//             name:"abc"
+//         },
+//             {name:"bcd"}
+//         ]
+//     },
+//     {
+//         name:"riya",
+//         sname:"tiwari",
+//         age: 20
+//     },
+//     {
+//         name:"suman",
+//         sname:"patidar",
+//         age:22    }
+
+// ]
+// // console.log(users[2].sname,users[0].friends[1])
+// for(var i=0;i<3;i++){
+//     console.log(users[i])
+//     for(var j=0;j<2;j++)
+//     {
+//         console.log(users[0].friends[j])
+//     }
+// }
+  
+// function callback(name)
+// {
+//     console.log(name)
+// }
+// hlo(callback)
+// function hlo(callback)
+// {
+//     let name = "sapna"
+//     callback(name)
+// }
+// let arr =[{
+// name:"sapna"
+// },
+// {
+//     name:"dwivedi"
+// }]
+// const callback = (value,index,array)=>{
+//   console.log(value.name)
+//   console.log(index)
+//   console.log()
+//   return 0
+// }
+// arr.map(callback)
+
+// arr.map((val, ind, array)=>{
+//  console.log(array)
+//  console.log(ind)
+//  console.log("values--",val.name)
+
+// })
+
+// const addition = (a,b)=>
+// {
+//     console.log(a+b)
+// }
+
+// function add(abc){
+//     let a =10
+//     let b = 20
+//     abc(a,b)
+
+// }
+// add(addition)
+
+// //immediate invoke function 
+// (function add()
+// {
+//     console.log("hiiee")
+// })()
+//default 
+// let a = 1
+// let b = 2
+// let c =`this is ${a} or ${b} ${a+b}`
+// console.log(c)
+// const person ={fname:"swati", lname:"suman" ,age:30}
+// for (let x in person){
+//     console.log(x)
+// }
+//destructure
+// var user = {
+//     name:" sapna" ,
+//     sname :"dwivedi"
+    
+// }
+// const{name,sname} = user
+// console.log(name)
+//destructure array
+
+// var user =[ {
+//     name :" sapna" ,
+//     sname : "dwivedi",
+//     friend : {
+//         fname : "shikha"
+//     }
+// },
+// {
+//     name : "navya",
+//     sname :"mishra",
+//     friend : {
+//         fname : "shikha2"
+//     } 
+// },
+// {
+//     name : "suhani",
+//     sname : "shah",
+//     friend : {
+//         fname : "shikha3"
+//     }
+// }]--->
+// const[name1,name2,name3] = user
+// const {name,sname} = name1
+// console.log(name1)
+// //map using destructuring
+// const callback = (value,index,array)=>{
+//     // console.log(index,value)
+//     const{name,sname,friend} = value
+//     const {fname}= friend
+//     console.log(fname)
+// }
+//     user.map(callback)
+
+     //
+    //  console.log("hii")
+    //  fetch("https://jsonplaceholder.typicode.com/users").then((Response)=>{
+    //     return Response.json()
+
+    // })
+    //     .then((json)=>{
+    //         console.log(json)
+        
+    // }) .catch((error)=>{
+    // console.log(error)})
+    // console.log("hii")
+     
+    
+
+    </script>
+</body>
+</html>
